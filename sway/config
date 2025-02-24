@@ -49,7 +49,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
    input "type:touchpad" {
        dwt enabled
        tap enabled
-       natural_scroll enabled
+       natural_scroll disabled
        middle_emulation enabled
    }
 #
@@ -95,6 +95,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
 
+    # Ditto, with mouse button
+    bindsym BTN_SIDE focus left
+    bindsym BTN_EXTRA focus right
+
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
     bindsym $mod+Shift+$down move down
@@ -105,6 +109,7 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
     bindsym $mod+Shift+Down move down
     bindsym $mod+Shift+Up move up
     bindsym $mod+Shift+Right move right
+
 #
 # Workspaces:
 #
