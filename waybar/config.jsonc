@@ -9,14 +9,12 @@
     "modules-left": [
         "sway/workspaces",
         "sway/mode",
-        "sway/scratchpad"
+        "sway/scratchpad",
+	"sway/window"
     ],
     "modules-center": [
-        "sway/window",
-	"custom/media"
     ],
     "modules-right": [
-        "pulseaudio",
         "network",
         "power-profiles-daemon",
         "cpu",
@@ -25,6 +23,7 @@
         "backlight",
         "battery",
         "tray",
+	"pulseaudio",
 	"clock"
     ],
     // Modules configuration
@@ -102,7 +101,8 @@
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	"format": "{:%a, %b %d %H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
