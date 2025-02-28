@@ -21,7 +21,7 @@ set $menu fuzzel
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/apalanis/Pictures/enp920hb1dc21.jpg fill
 #
 # Example configuration:
 #
@@ -232,5 +232,9 @@ bar {
 
 include /etc/sway/config.d/*
 
-exec_always ~/.config/sway/monitor_setup.sh
+set $laptop eDP-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
 
+exec_always ~/.config/sway/monitor_setup.sh
+exec_always ~/.config/sway/clamshell.sh 

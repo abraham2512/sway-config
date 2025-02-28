@@ -156,11 +156,12 @@
     },
     "network": {
       "format-wifi": "{essid} ({signalStrength}%) 📶 ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
-      "format-ethernet": "🌐 {ifname} ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
+      "format-ethernet": "{ifname} 🌐  ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
       "format-disconnected": "⚠ Offline",
       "interval": 2,
       "tooltip-format-wifi": "SSID: {essid}\nIP: {ipaddr}/{cidr}\nSignal: {signaldBm} dBm\nFreq: {frequency} MHz",
-      "tooltip-format-ethernet": "Interface: {ifname}\nGateway: {gwaddr}\nIP: {ipaddr}/{cidr}"
+      "tooltip-format-ethernet": "Interface: {ifname}\nGateway: {gwaddr}\nIP: {ipaddr}/{cidr}",
+      "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
