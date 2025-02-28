@@ -155,7 +155,7 @@
       }
     },
     "network": {
-      "format-wifi": "📶 {essid} ({signalStrength}%) ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
+      "format-wifi": "{essid} ({signalStrength}%) 📶 ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
       "format-ethernet": "🌐 {ifname} ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
       "format-disconnected": "⚠ Offline",
       "interval": 2,
