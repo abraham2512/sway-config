@@ -237,4 +237,3 @@ bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
 exec_always ~/.config/sway/monitor_setup.sh
-exec_always ~/.config/sway/clamshell.sh 

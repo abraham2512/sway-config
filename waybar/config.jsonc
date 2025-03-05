@@ -17,6 +17,7 @@
     "modules-right": [
         "network",
         "power-profiles-daemon",
+	"idle_inhibitor",
         "cpu",
         "memory",
         "temperature",
@@ -155,8 +156,8 @@
       }
     },
     "network": {
-      "format-wifi": "{essid} ({signalStrength}%) 📶 ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
-      "format-ethernet": "{ifname} 🌐  ⬇{bandwidthDownBits}/s ⬆{bandwidthUpBits}/s",
+      "format-wifi": "{essid} ({signalStrength}%) 📶 ⬇{bandwidthDownBits} ⬆{bandwidthUpBits}",
+      "format-ethernet": "{ifname} 🌐  ⬇{bandwidthDownBits} ⬆{bandwidthUpBits}",
       "format-disconnected": "⚠ Offline",
       "interval": 2,
       "tooltip-format-wifi": "SSID: {essid}\nIP: {ipaddr}/{cidr}\nSignal: {signaldBm} dBm\nFreq: {frequency} MHz",
