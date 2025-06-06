@@ -42,6 +42,8 @@ output * bg /home/apalanis/Pictures/enp920hb1dc21.jpg fill
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
+bindsym --release $mod+Shift+l exec swaylock
+
 ### Input configuration
 #
 # Example configuration:
